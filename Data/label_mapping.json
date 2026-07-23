@@ -1,0 +1,39 @@
+{
+  "2017": {
+    "benign": "BENIGN",
+    "dos hulk": "DoS_DDoS",
+    "dos goldeneye": "DoS_DDoS",
+    "dos slowloris": "DoS_DDoS",
+    "dos slowhttptest": "DoS_DDoS",
+    "ddos": "DoS_DDoS",
+    "heartbleed": "DoS_DDoS",
+    "ftp patator": "BRUTE_FORCE",
+    "ssh patator": "BRUTE_FORCE",
+    "web attack brute force": "WEB_ATTACK",
+    "web attack xss": "WEB_ATTACK",
+    "web attack sql injection": "WEB_ATTACK",
+    "bot": "BOTNET",
+    "infiltration": "INFILTRATION",
+    "portscan": "INFILTRATION"
+  },
+  "2018": {
+    "benign": "BENIGN",
+    "dos attacks hulk": "DoS_DDoS",
+    "dos attacks goldeneye": "DoS_DDoS",
+    "dos attacks slowloris": "DoS_DDoS",
+    "dos attacks slowhttptest": "DoS_DDoS",
+    "ddos attacks loic http": "DoS_DDoS",
+    "ddos attack hoic": "DoS_DDoS",
+    "ddos attack loic udp": "DoS_DDoS",
+    "ftp bruteforce": "BRUTE_FORCE",
+    "ssh bruteforce": "BRUTE_FORCE",
+    "brute force web": "WEB_ATTACK",
+    "brute force xss": "WEB_ATTACK",
+    "sql injection": "WEB_ATTACK",
+    "bot": "BOTNET",
+    "infilteration": "INFILTRATION"
+  },
+  "file_with_extra_cols_2018": "02-20-2018.csv",
+  "encoding_2017": "latin1",
+  "encoding_2018": "ascii"
+}
