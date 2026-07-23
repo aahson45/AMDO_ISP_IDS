@@ -1,0 +1,28 @@
+{
+  "input_file": "C:\\Users\\usid3\\Downloads\\Ali Ahson Thesis Software\\Data Set\\balanced_dataset.csv",
+  "random_seed": 42,
+  "ratios": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "row_counts": {
+    "total": 3292666,
+    "train": 2634132,
+    "val": 329267,
+    "test": 329267
+  },
+  "class_distribution_full_pct": {
+    "DoS_DDoS": 67.199,
+    "BRUTE_FORCE": 11.976,
+    "BOTNET": 8.715,
+    "INFILTRATION": 6.399,
+    "BENIGN": 5.103,
+    "WEB_ATTACK": 0.607
+  },
+  "output_files": {
+    "train": "C:\\Users\\usid3\\Downloads\\Ali Ahson Thesis Software\\Data Set\\splits\\train.csv",
+    "val": "C:\\Users\\usid3\\Downloads\\Ali Ahson Thesis Software\\Data Set\\splits\\val.csv",
+    "test": "C:\\Users\\usid3\\Downloads\\Ali Ahson Thesis Software\\Data Set\\splits\\test.csv"
+  }
+}
