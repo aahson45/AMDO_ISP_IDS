@@ -1,0 +1,145 @@
+ADMO THESIS - LABEL NORMALIZATION REPORT
+
+
+######################################################################
+# CICIDS-2017 LABEL SCAN
+######################################################################
+
+----------------------------------------------------------------------
+FILE: Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+  'DDoS' -> DoS_DDoS (count: 128,027)
+  'BENIGN' -> BENIGN (count: 97,718)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+  'PortScan' -> INFILTRATION (count: 158,930)
+  'BENIGN' -> BENIGN (count: 127,537)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: Friday-WorkingHours-Morning.pcap_ISCX.csv
+  'BENIGN' -> BENIGN (count: 189,067)
+  'Bot' -> BOTNET (count: 1,966)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: Monday-WorkingHours.pcap_ISCX.csv
+  'BENIGN' -> BENIGN (count: 529,918)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv
+  'BENIGN' -> BENIGN (count: 288,566)
+  'Infiltration' -> INFILTRATION (count: 36)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv
+  'BENIGN' -> BENIGN (count: 168,186)
+  'Web Attack ï¿½ Brute Force' -> WEB_ATTACK (count: 1,507)
+  'Web Attack ï¿½ XSS' -> WEB_ATTACK (count: 652)
+  'Web Attack ï¿½ Sql Injection' -> WEB_ATTACK (count: 21)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: Tuesday-WorkingHours.pcap_ISCX.csv
+  'BENIGN' -> BENIGN (count: 432,074)
+  'FTP-Patator' -> BRUTE_FORCE (count: 7,938)
+  'SSH-Patator' -> BRUTE_FORCE (count: 5,897)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: Wednesday-workingHours.pcap_ISCX.csv
+  'BENIGN' -> BENIGN (count: 440,031)
+  'DoS Hulk' -> DoS_DDoS (count: 231,073)
+  'DoS GoldenEye' -> DoS_DDoS (count: 10,293)
+  'DoS slowloris' -> DoS_DDoS (count: 5,796)
+  'DoS Slowhttptest' -> DoS_DDoS (count: 5,499)
+  'Heartbleed' -> DoS_DDoS (count: 11)
+  All real labels in this file mapped successfully.
+
+
+######################################################################
+# CSE-CIC-IDS2018 LABEL SCAN
+######################################################################
+
+----------------------------------------------------------------------
+FILE: 02-14-2018.csv
+  'Benign' -> BENIGN (count: 667,626)
+  'FTP-BruteForce' -> BRUTE_FORCE (count: 193,360)
+  'SSH-Bruteforce' -> BRUTE_FORCE (count: 187,589)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: 02-15-2018.csv
+  'Benign' -> BENIGN (count: 996,077)
+  'DoS attacks-GoldenEye' -> DoS_DDoS (count: 41,508)
+  'DoS attacks-Slowloris' -> DoS_DDoS (count: 10,990)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: 02-16-2018.csv
+  'DoS attacks-Hulk' -> DoS_DDoS (count: 461,912)
+  'Benign' -> BENIGN (count: 446,772)
+  'DoS attacks-SlowHTTPTest' -> DoS_DDoS (count: 139,890)
+  DROP (duplicate embedded header row): 'Label' - count: 1
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: 02-20-2018.csv
+  'Benign' -> BENIGN (count: 7,372,557)
+  'DDoS attacks-LOIC-HTTP' -> DoS_DDoS (count: 576,191)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: 02-21-2018.csv
+  'DDOS attack-HOIC' -> DoS_DDoS (count: 686,012)
+  'Benign' -> BENIGN (count: 360,833)
+  'DDOS attack-LOIC-UDP' -> DoS_DDoS (count: 1,730)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: 02-22-2018.csv
+  'Benign' -> BENIGN (count: 1,048,213)
+  'Brute Force -Web' -> WEB_ATTACK (count: 249)
+  'Brute Force -XSS' -> WEB_ATTACK (count: 79)
+  'SQL Injection' -> WEB_ATTACK (count: 34)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: 02-23-2018.csv
+  'Benign' -> BENIGN (count: 1,048,009)
+  'Brute Force -Web' -> WEB_ATTACK (count: 362)
+  'Brute Force -XSS' -> WEB_ATTACK (count: 151)
+  'SQL Injection' -> WEB_ATTACK (count: 53)
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: 02-28-2018.csv
+  'Benign' -> BENIGN (count: 544,200)
+  'Infilteration' -> INFILTRATION (count: 68,871)
+  DROP (duplicate embedded header row): 'Label' - count: 33
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: 03-01-2018.csv
+  'Benign' -> BENIGN (count: 238,037)
+  'Infilteration' -> INFILTRATION (count: 93,063)
+  DROP (duplicate embedded header row): 'Label' - count: 25
+  All real labels in this file mapped successfully.
+
+----------------------------------------------------------------------
+FILE: 03-02-2018.csv
+  'Benign' -> BENIGN (count: 762,384)
+  'Bot' -> BOTNET (count: 286,191)
+  All real labels in this file mapped successfully.
+
+
+######################################################################
+# OVERALL UNMAPPED LABEL SUMMARY (across all files)
+######################################################################
+
+  Total duplicate-header rows to drop (2018 artifact): 59
+  No genuinely unmapped labels found. Safe to proceed to 02_merge_and_clean.py.
+  (Remember: 02_merge_and_clean.py must explicitly DROP rows where the Label column normalizes to 'label' - these are embedded duplicate header rows, not real data.)

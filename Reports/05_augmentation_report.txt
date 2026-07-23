@@ -1,0 +1,54 @@
+ADMO THESIS - CTGAN + SMOTEENN AUGMENTATION REPORT
+
+--- STAGE 1: Downsampling BENIGN ---
+Total rows: 18,965,059 | Total BENIGN: 15,661,569
+BENIGN sample fraction: 0.01916 (target ~300,000)
+BENIGN kept: 299,817 | All other classes kept in full: 3,303,490
+
+--- STAGE 2: CTGAN synthesis for extreme minority classes ---
+Classes below 50,000 rows (CTGAN candidates): ['WEB_ATTACK']
+
+  Class 'WEB_ATTACK': 3,108 real rows -> generating 16,892 synthetic rows
+
+Total synthetic rows generated: 16,892
+
+Class counts after CTGAN stage:
+unified_label
+DoS_DDoS        2297981
+BRUTE_FORCE      394775
+INFILTRATION     319479
+BENIGN           299817
+BOTNET           288147
+WEB_ATTACK        20000
+Name: count, dtype: int64
+
+--- STAGE 3: SMOTE oversampling (targeted) + ENN cleaning (always runs) ---
+Class counts entering Stage 3: {'DoS_DDoS': 2297981, 'BRUTE_FORCE': 394775, 'INFILTRATION': 319479, 'BENIGN': 299817, 'BOTNET': 288147, 'WEB_ATTACK': 20000}
+No class below target - SMOTE oversampling step skipped (nothing to add), but ENN cleaning still runs below.
+
+Running ENN cleaning across the full combined dataset (removes noisy/ambiguous rows near class boundaries)...
+Row count before ENN cleaning: 3,620,199
+Row count after ENN cleaning:  3,292,666
+Rows removed as noisy/ambiguous: 327,533
+
+Per-class counts after ENN cleaning:
+unified_label
+DoS_DDoS        2212639
+BRUTE_FORCE      394339
+BOTNET           286968
+INFILTRATION     210704
+BENIGN           168016
+WEB_ATTACK        20000
+Name: count, dtype: int64
+
+--- FINAL CLASS DISTRIBUTION ---
+unified_label
+DoS_DDoS        2212639
+BRUTE_FORCE      394339
+BOTNET           286968
+INFILTRATION     210704
+BENIGN           168016
+WEB_ATTACK        20000
+Name: count, dtype: int64
+
+Output written to: C:\Users\usid3\Downloads\Ali Ahson Thesis Software\Data Set\balanced_dataset.csv

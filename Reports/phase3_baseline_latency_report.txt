@@ -1,0 +1,23 @@
+ADMO THESIS - PHASE 3: TYPE B BASELINE LATENCY REPORT
+(No IDS, no ADMO running - pure pfSense forwarding baseline)
+WAN capture: 2000 total packets in capture
+WAN capture: 1000 echo REQUESTS, 1000 echo REPLIES (ignored), 0 other ICMP (ignored)
+LAN capture: 2000 total packets in capture
+LAN capture: 1000 echo REQUESTS, 1000 echo REPLIES (ignored), 0 other ICMP (ignored)
+
+Matched (present in both captures): 1000
+WAN-only (never made it to LAN - dropped or blocked): 0
+LAN-only (should not be possible - would indicate a capture artifact): 0
+
+--- BASELINE FORWARDING LATENCY (WAN-in to LAN-out), N=1000 packets ---
+Mean:   0.1205 ms
+Median: 0.1180 ms
+Min:    0.0298 ms
+P95:    0.1850 ms
+P99:    0.6159 ms
+Max:    0.7560 ms
+Std dev:0.0934 ms
+
+This is the TRUE baseline forwarding latency with NO IDS and NO ADMO running - the reference point every later Phase 5 comparison measures against.
+
+Per-packet data saved to: C:\Users\usid3\Downloads\Ali Ahson Thesis Software\Data Set\report\baseline_latency_per_packet.csv

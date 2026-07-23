@@ -1,0 +1,16 @@
+ADMO THESIS - CLASS BALANCE REPORT (post feature selection)
+
+Total rows after feature selection: 18,965,059
+
+Class                  Before         After     Dropped   % of class lost  % of total (after)
+-----------------------------------------------------------------------------------------------
+BENIGN             15,757,805    15,661,569      96,236            0.611%             82.581%
+DoS_DDoS            2,298,932     2,297,981         951            0.041%             12.117%
+BRUTE_FORCE           394,784       394,775           9            0.002%              2.082%
+INFILTRATION          320,900       319,479       1,421            0.443%              1.685%
+BOTNET                288,157       288,147          10            0.003%              1.519%
+WEB_ATTACK              3,108         3,108           0            0.000%              0.016%
+
+No class lost a disproportionate share of rows (all under 2%). Safe to proceed to 05_ctgan_smoteenn_augment.py.
+
+Worst-case imbalance ratio (majority vs. smallest class): 15,661,569 : 3,108 (~5,039 : 1)

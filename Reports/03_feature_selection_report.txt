@@ -1,0 +1,27 @@
+ADMO THESIS - FEATURE SELECTION REPORT (Golden 12)
+
+All 12 Golden features confirmed present in combined_clean.csv.
+
+Total rows read:  19,063,686
+Total rows kept:  18,965,059
+Total rows dropped (NaN/Inf in a Golden 12 feature): 98,627
+
+Infinity values found (before conversion to NaN):
+  Flow Packets/s: 98,627
+  Flow Bytes/s: 37,548
+
+NaN values already present (before any Infinity handling):
+  Fwd Header Length: 0
+  Bwd Header Length: 0
+  Fwd PSH Flags: 0
+  ACK Flag Count: 0
+  Init_Win_bytes_forward: 0
+  Flow Duration: 0
+  Flow Packets/s: 0
+  Flow Bytes/s: 61,079
+  Fwd Packet Length Max: 0
+  Flow IAT Mean: 0
+  Fwd IAT Max: 0
+  Bwd IAT Min: 0
+
+Output written to: C:\Users\usid3\Downloads\Ali Ahson Thesis Software\Data Set\golden12_features.csv

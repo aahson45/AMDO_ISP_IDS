@@ -1,0 +1,53 @@
+ADMO THESIS - MERGE & CLEAN REPORT
+
+Processing 2017 file: Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+
+Processing 2017 file: Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+
+Processing 2017 file: Friday-WorkingHours-Morning.pcap_ISCX.csv
+
+Processing 2017 file: Monday-WorkingHours.pcap_ISCX.csv
+
+Processing 2017 file: Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv
+
+Processing 2017 file: Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv
+
+Processing 2017 file: Tuesday-WorkingHours.pcap_ISCX.csv
+
+Processing 2017 file: Wednesday-workingHours.pcap_ISCX.csv
+
+Processing 2018 file: 02-14-2018.csv
+
+Processing 2018 file: 02-15-2018.csv
+
+Processing 2018 file: 02-16-2018.csv
+
+Processing 2018 file: 02-20-2018.csv
+
+Processing 2018 file: 02-21-2018.csv
+
+Processing 2018 file: 02-22-2018.csv
+
+Processing 2018 file: 02-23-2018.csv
+
+Processing 2018 file: 02-28-2018.csv
+
+Processing 2018 file: 03-01-2018.csv
+
+Processing 2018 file: 03-02-2018.csv
+
+
+======================================================================
+MERGE COMPLETE
+Total rows written: 19,063,686
+Total rows dropped (unmapped/duplicate-header): 59
+
+Final class distribution (unified 6-class taxonomy):
+  BENIGN: 15,757,805
+  DoS_DDoS: 2,298,932
+  BRUTE_FORCE: 394,784
+  INFILTRATION: 320,900
+  BOTNET: 288,157
+  WEB_ATTACK: 3,108
+
+Output written to: C:\Users\usid3\Downloads\Ali Ahson Thesis Software\Data Set\combined_clean.csv

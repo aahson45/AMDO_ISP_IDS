@@ -1,0 +1,36 @@
+ADMO THESIS - TIER 1 FAST-PATH BINARY CLASSIFIER REPORT
+Positive class definition: 'DoS_DDoS' vs everything else (assumption - flag with supervisor if 'vs BENIGN only' was intended instead)
+
+Train: 2,634,132 rows (1,770,111 positive / 864,021 negative)
+Val:   329,267 rows (221,264 positive / 108,003 negative)
+Test:  329,267 rows (221,264 positive / 108,003 negative)
+
+Training stopped at boosting round: 299 (early stopping patience: 20 rounds)
+
+--- TEST SET RESULTS (held out, never used in training or tuning) ---
+Accuracy:  0.9941
+Precision: 0.9928
+Recall:    0.9984
+F1-score:  0.9956
+
+Confusion matrix:
+[[106393   1610]
+ [   344 220920]]
+
+              precision    recall  f1-score   support
+
+    NOT_DDoS       1.00      0.99      0.99    108003
+    DoS_DDoS       0.99      1.00      1.00    221264
+
+    accuracy                           0.99    329267
+   macro avg       0.99      0.99      0.99    329267
+weighted avg       0.99      0.99      0.99    329267
+
+
+--- Single-row inference latency (proxy check, 200 calls after 20 warmup) ---
+Mean latency: 1.3518 ms
+P95 latency:  1.9264 ms
+Architecture target: < 0.5 ms
+NOTE: this is a rough proxy on a plain (non-INT8-quantized) model, run from Python (not a compiled fast-path). Full Type A benchmarking with MP1-MP4 markers happens in 10_latency_bench.py; INT8 quantization for deployment is a separate step for Phase 5.
+
+Model saved to: C:\Users\usid3\Downloads\Ali Ahson Thesis Software\Data Set\models\tier1_fastpath_binary.json

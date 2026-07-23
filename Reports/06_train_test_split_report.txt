@@ -1,0 +1,22 @@
+ADMO THESIS - TRAIN/VAL/TEST SPLIT REPORT
+
+Total rows loaded: 3,292,666
+Random seed: 42
+Split ratios - train: 0.8, val: 0.1, test: 0.1
+
+train.csv: 2,634,132 rows -> C:\Users\usid3\Downloads\Ali Ahson Thesis Software\Data Set\splits\train.csv
+val.csv:   329,267 rows -> C:\Users\usid3\Downloads\Ali Ahson Thesis Software\Data Set\splits\val.csv
+test.csv:  329,267 rows -> C:\Users\usid3\Downloads\Ali Ahson Thesis Software\Data Set\splits\test.csv
+
+--- Stratification check: class % in each split (should closely match) ---
+               Full_%  Train_%   Val_%  Test_%
+unified_label                                 
+DoS_DDoS       67.199   67.199  67.199  67.199
+BRUTE_FORCE    11.976   11.976  11.976  11.976
+BOTNET          8.715    8.715   8.715   8.715
+INFILTRATION    6.399    6.399   6.399   6.399
+BENIGN          5.103    5.103   5.103   5.103
+WEB_ATTACK      0.607    0.607   0.607   0.607
+
+Max deviation from full-dataset class proportion across all splits/classes: 0.000 percentage points
+Stratification confirmed: class balance is essentially identical across all three splits.

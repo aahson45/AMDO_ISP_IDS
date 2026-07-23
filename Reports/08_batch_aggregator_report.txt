@@ -1,0 +1,23 @@
+ADMO THESIS - TIER 2 BATCH AGGREGATOR REPORT
+Source file: 02-20-2018.csv (the only file with Src IP + Timestamp)
+
+Raw rows loaded: 7,948,748
+Rows after label mapping / dropping header artifacts: 7,948,748
+Rows dropped for NaN/Inf in Golden 12: 59,453
+Rows dropped for unparseable Timestamp: 0
+
+Unique source IPs: 31,124
+Unique 5-minute windows: 144
+
+Total (Src IP, window) groups produced: 318,925
+16-D vector columns produced: 16
+(Attack_Flow_Fraction is a diagnostic label-quality field, not one of the 16 declared model input features - kept separately so mixed windows are visible.)
+
+Window label distribution:
+window_label
+BENIGN      318748
+DoS_DDoS       177
+
+Output written to: C:\Users\usid3\Downloads\Ali Ahson Thesis Software\Data Set\processed\tier2_aggregated_windows.csv
+
+REMINDER: this demonstrates Tier 2's aggregation logic on ONE real historical file (02-20-2018.csv), the only one with genuine Src IP + Timestamp. Full production validation of Tier 2 happens in Phase 5 with live lab-generated traffic, where every captured flow naturally includes a real source IP.
